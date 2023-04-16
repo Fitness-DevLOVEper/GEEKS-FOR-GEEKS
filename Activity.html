@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Activity</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Navigation Bar Styles */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #2196F3;
+      color: #fff;
+      z-index: 999;
+    }
+
+    .bottom-nav a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .bottom-nav .nav-home {
+      width: 20%;
+    }
+
+    .bottom-nav .nav-contact {
+      width: 20%;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      margin: 50px auto;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #2196F3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #0D47A1;
+    }
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #161616;
+	min-height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/64/74/9f/64749face8cd84109fdb954b664ec1f4.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .sci {
+	color: #fff;
+	font-size: 20px;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="bottom-nav">
+    <a href="http://34.131.144.144/Login/verify_user/Exercise/" class="nav-home">
+      <i class="fa fa-home"></i>
+      <span>Exercise</span>
+    </a>
+    <a href="http://34.131.144.144/Login/verify_user/Activity/" class="nav-about">
+      <i class="fa fa-info"></i>
+      <span>Activity</span>
+      <a href="http://34.131.144.144/Login/verify_user/Profile/" class="nav-contact">
+        <i class="fa fa-envelope"></i>
+        <span>Profile</span>
+      </a>
+  </nav>
+
+  <section>
+		<div class="container">
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="https://blog.nasm.org/hubfs/workouts-for-beginners.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>Workouts<br><span>Number of exercises</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+          <label><h1>0</h1></label>
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/06/Female_Fitness_Crunch_Outside-1296x728-Header-2-1296x728.jpg?w=1155&h=1528">
+					</div>
+					<div class="contentBx">
+						<h3>Reps<br><span>total number of reps</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+          <label><h1>0</h1></label>
+				</ul>
+			</div>
+			<div class="card">
+				<div class="content">
+					<div class="imgBx">
+						<img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2018/04/30/Pictures/_aa689e28-4c6d-11e8-a9dc-143d85bacf22.jpg">
+					</div>
+					<div class="contentBx">
+						<h3>Time<br><span>Minutes</span></h3>
+					</div>
+				</div>
+				<ul class="sci">
+          <label><h1>0</h1></label>
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

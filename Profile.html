@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      /* Body styles */
+	/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+/* Navigation Bar Styles */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2196F3;
+  color: #fff;
+  z-index: 999;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.bottom-nav .nav-home {
+  width: 20%;
+}
+
+.bottom-nav .nav-contact {
+  width: 20%;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #0D47A1;
+}
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Container styles */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+      }
+      
+      /* Profile image styles */
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+      }
+      
+      /* Profile name styles */
+      .profile-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      /* Profile description styles */
+      .profile-description {
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+      }
+      
+      /* Profile link styles */
+      .profile-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      
+      /* Profile link hover styles */
+      .profile-link:hover {
+        text-decoration: underline;
+      }
+	
+	.h1{
+  font-size: 64px;
+  color:#2196F3;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f3f3;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 300px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.wrapper .left{
+  width: 35%;
+  background: linear-gradient(to right top,#2196F3,#01dbdf);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapper .left h4{
+  margin-bottom: 10px;
+}
+
+.wrapper .left p{
+  font-size: 12px;
+}
+
+.wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data{
+  width: 45%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.wrapper .social_media ul{
+  display: flex;
+}
+
+.wrapper .social_media ul li{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.wrapper .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
+ body {
+      background-image: url("https://images.squarespace-cdn.com/content/v1/5ada11772714e5eb213ab1df/1598972073858-26PCV72I86ITFZSLO8KY/Background-compressed.jpg?format=1500w");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="bottom-nav">
+    <a href="http://34.131.144.144/Login/verify_user/Exercise/" class="nav-home">
+      <i class="fa fa-home"></i>
+      <span>Exercise</span>
+    </a>
+    <a href="http://34.131.144.144/Login/verify_user/Activity/" class="nav-about">
+      <i class="fa fa-info"></i>
+      <span>Activity</span>
+      <a href="http://34.131.144.144/Login/verify_user/Profile/" class="nav-contact">
+        <i class="fa fa-envelope"></i>
+        <span>Profile</span>
+      </a>
+  </nav>
+
+  <!-- Main Content -->
+  <!--div class="container">
+    <h1>Profile</h1>
+      <img class="profile-image" src="https://via.placeholder.com/200x200.png?text=Profile+Image" alt="Profile Image">
+      <h1 class="profile-name">John Doe</h1>
+      <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in odio vel ipsum lacinia pharetra quis nec arcu. Sed sit amet lectus ut magna pulvinar convallis eu ut est. Duis sit amet leo tincidunt, venenatis nulla ac, aliquam eros. Duis nec elementum velit, eget commodo nisl.</p>
+      <a class="profile-link" href="#">View Profile</a>
+  </div-->
+<div class="wrapper">
+      <div class="left">
+        <img src="https://i.imgur.com/cMy8V5j.png" alt="user" width="100">
+        <h4>Test user</h4>
+      </div>
+      <div class="right">
+        <div class="info">
+          <h3>Information</h3>
+          <div class="info_data">
+            <div class="data">
+              <h4>Email</h4>
+              <p>system@gmail.com</p>
+             <h4>username</h4>
+             <p>system</p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+  <!-- JavaScript Code -->
+  <script src="main.js"></script>
+</body>
+
+</html>

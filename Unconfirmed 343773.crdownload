@@ -1,0 +1,19 @@
+from django.urls import path
+from . import views
+urlpatterns = [
+    path('',views.view_login_page),
+    path('verify/',views.verify),
+    path('signup1/',views.signup_screen1),
+    path('forgot1/',views.forgot_screen1),
+    path('verifyemail/',views.send_otp),
+    path('forgot2/',views.verify_otp),
+    path('reset/',views.verify_otp),
+    path('reset2/',views.reset_password),
+    path('signup4/',views.signup_screen4),
+    path('signup3/',views.verify_otp1),
+    path('verify_user/Profile/',views.show_profile),
+    path('verify_user/Activity/',views.show_activity),
+    path('verify_user/Exercise/',views.show_exercise),
+    path('verify_user/bicep_curls/',views.show_bicepcurls),
+    path('verify_user/barbell_biceps_curl',views.show_barbell),
+]

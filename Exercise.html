@@ -1,0 +1,237 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Navigation Bar Styles */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #2196F3;
+      color: #fff;
+      z-index: 999;
+    }
+
+    .bottom-nav a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .bottom-nav .nav-home {
+      width: 20%;
+    }
+
+    .bottom-nav .nav-contact {
+      width: 20%;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      margin: 50px auto;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #2196F3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #0D47A1;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .card img {
+      max-width: 100%;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    .card-content h2 {
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease-out;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .row {
+      display: flex;
+      /*justify-content: center;*/
+    }
+
+    h1 {
+      font-size: 64px;
+      color: #2196F3;
+    }
+
+    .card:focus {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      display: block;
+      top: 0px;
+      position: center;
+      max-width: 280px;
+      background-color: #f2f8f9;
+      border-radius: 4px;
+      padding: 32px 24px;
+      margin: 12px;
+      text-decoration: none;
+      z-index: 0;
+      overflow: hidden;
+      border: 1px solid #f2f8f9;
+
+      &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -16px;
+        right: -16px;
+        background: #2196F3;
+        height: 32px;
+        width: 32px;
+        border-radius: 32px;
+        transform: scale(2);
+        transform-origin: 50% 50%;
+        transition: transform 0.15s ease-out;
+      }
+
+      &:hover:before {
+        transform: scale(2.15);
+      }
+    }
+
+    body {
+      background-image: url("https://img.freepik.com/free-photo/portrait-young-sportive-girl-training-with-dumbbells-isolated-blue-background-neon_155003-45614.jpg?w=1060&t=st=1681548046~exp=1681548646~hmac=836837de480ca04e4a55ffba7839d3d294ca773060b6e713e6df45ae50f300fe");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="bottom-nav">
+    <a href="http://34.131.144.144/Login/verify_user/Exercise/" class="nav-home">
+      <i class="fa fa-home"></i>
+      <span>Exercise</span>
+    </a>
+    <a href="http://34.131.144.144/Login/verify_user/Activity/" class="nav-about">
+      <i class="fa fa-info"></i>
+      <span>Activity</span>
+      <a href="http://34.131.144.144/Login/verify_user/Profile/" class="nav-contact">
+        <i class="fa fa-envelope"></i>
+        <span>Profile</span>
+      </a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Choose Exercise to perform</h1>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <a href="http://34.131.144.144/Login/verify_user/bicep_curls/">
+        <img src="https://c4.wallpaperflare.com/wallpaper/943/432/879/muscle-bodybuilder-barbell-weight-training-wallpaper-preview.jpg" alt="Image">
+        </a>
+        <div class="card-content">
+          <h2>Bicep Curls</h2>
+          <p>A full repetition consists of bending or "curling" 
+            the elbow until it is fully flexed, then slowly lowering the weight to the starting position.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a href="http://34.131.144.144/Login/verify_user/barbell_biceps_curl/">
+        <img src="https://img.freepik.com/premium-photo/portrait-athlete-who-is-lifting-barbell-gym-concept-sport-healthy-lifestyle-mixed-media_392761-3100.jpg?w=1380" alt="Image">
+        </a>
+        <div class="card-content">
+          <h2>Barbell Biceps Curl</h2>
+          <p>The Barbell biceps Curl is one of a handful of old-school exercises that retains the 
+            hardcore reputation</p>
+        </div>
+      </div>
+    </div>
+   </div>
+    </div>
+  </div>
+  <script>
+    
+  </script>
+</body>
+</html>
